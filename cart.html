@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>(function(){try{var t=localStorage.getItem('gg_theme');document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light');}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+  <meta name="theme-color" content="#D91F26">
+
+  <title>Shopping Cart | Game &amp; Games Amusement</title>
+  <meta name="description" content="View and manage your selected arcade machines, wholesale plush toys, spare parts, and publications in your Game &amp; Games shopping cart.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-announcement-bar">
+    <div class="container top-bar-inner">
+      <div class="top-tagline">
+        <i data-lucide="sparkles"></i>
+        <span>EARN MORE, REPAIR LESS, GROW FASTER, STAY STRESS FREE.</span>
+      </div>
+      <div class="top-contact-info">
+        <div class="top-contact-item">
+          <i data-lucide="phone-call"></i>
+          <a href="tel:+918855922736">+91 8855922736</a>
+        </div>
+        <div class="top-contact-item top-hours">
+          <i data-lucide="clock"></i>
+          <span>Mon–Sat: 10:00 AM – 6:00 PM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="site-logo" aria-label="Game &amp; Games Amusement – Home">
+        <img src="assets/images/logo/logo.svg" alt="Game &amp; Games Amusement logo" width="409" height="100">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link"><span>About</span><i data-lucide="chevron-down"></i></a>
+          <div class="nav-dropdown">
+            <a href="about.html" class="dropdown-link"><i data-lucide="building-2"></i> About Us</a>
+            <a href="brands.html" class="dropdown-link"><i data-lucide="shield-check"></i> Our Brands</a>
+            <a href="events.html" class="dropdown-link"><i data-lucide="calendar"></i> Events &amp; News</a>
+            <a href="careers.html" class="dropdown-link"><i data-lucide="briefcase"></i> Careers</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="games.html" class="nav-link"><span>Our Games</span><i data-lucide="chevron-down"></i></a>
+          <div class="nav-dropdown">
+            <a href="games.html" class="dropdown-link"><i data-lucide="gamepad-2"></i> All Machines</a>
+            <a href="game-details.html?id=pick-a-prize" class="dropdown-link"><i data-lucide="trophy"></i> Pick A Prize (Claw)</a>
+            <a href="game-details.html?id=press-a-prize" class="dropdown-link"><i data-lucide="trophy"></i> Press A Prize (Clip)</a>
+            <a href="game-details.html?id=ten-on-ten" class="dropdown-link"><i data-lucide="trophy"></i> 10 on 10 (Timer)</a>
+            <a href="game-details.html?id=cut-a-prize" class="dropdown-link"><i data-lucide="trophy"></i> Cut A Prize (Cutter)</a>
+            <a href="game-details.html?id=perfect-tower" class="dropdown-link"><i data-lucide="trophy"></i> Perfect Tower (Stacker)</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="toys.html" class="nav-link"><span>Products</span><i data-lucide="chevron-down"></i></a>
+          <div class="nav-dropdown">
+            <a href="toys.html" class="dropdown-link"><i data-lucide="gift"></i> Buy Toys &amp; Prizes</a>
+            <a href="spare-parts.html" class="dropdown-link"><i data-lucide="wrench"></i> Buy Spare Parts</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="business-opportunities.html" class="nav-link"><span>Business</span><i data-lucide="chevron-down"></i></a>
+          <div class="nav-dropdown">
+            <a href="business-opportunities.html" class="dropdown-link"><i data-lucide="trending-up"></i> Franchise &amp; EMI Models</a>
+            <a href="advertise.html" class="dropdown-link"><i data-lucide="megaphone"></i> Advertise With Us</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="knowledge-centre.html" class="nav-link"><span>Learn</span><i data-lucide="chevron-down"></i></a>
+          <div class="nav-dropdown">
+            <a href="knowledge-centre.html" class="dropdown-link"><i data-lucide="book-open"></i> Knowledge Centre</a>
+            <a href="handbook.html" class="dropdown-link"><i data-lucide="book-marked"></i> Handbook of Wisdom</a>
+            <a href="repair-maintenance.html" class="dropdown-link"><i data-lucide="wrench"></i> Repair &amp; Upkeep</a>
+          </div>
+        </div>
+        <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" aria-label="Switch to dark theme" title="Switch theme"><svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <a href="cart.html" class="header-cart-btn" aria-label="Shopping cart">
+          <i data-lucide="shopping-bag"></i>
+          <span class="cart-badge-count">0</span>
+        </a>
+        <button type="button" class="btn btn-primary btn-sm header-cta" data-open-callback>
+          <i data-lucide="phone"></i> Request Callback
+        </button>
+        <button type="button" class="mobile-toggle-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile navigation">
+    <div class="drawer-header">
+      <a href="index.html" class="site-logo"><img src="assets/images/logo/logo.svg" alt="Game &amp; Games Amusement" width="409" height="100"></a>
+      <button type="button" class="drawer-close-btn" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="drawer-content">
+      <ul class="drawer-nav-list">
+        <li class="drawer-nav-item"><a href="index.html" class="drawer-link">Home</a></li>
+        <li class="drawer-nav-item">
+          <button type="button" class="drawer-link drawer-dropdown-toggle" aria-expanded="false"><span>About</span><i data-lucide="chevron-down"></i></button>
+          <div class="drawer-submenu">
+            <a href="about.html">About Us</a>
+            <a href="brands.html">Our Brands</a>
+            <a href="events.html">Events &amp; News</a>
+            <a href="careers.html">Careers</a>
+          </div>
+        </li>
+        <li class="drawer-nav-item">
+          <button type="button" class="drawer-link drawer-dropdown-toggle" aria-expanded="false"><span>Our Games</span><i data-lucide="chevron-down"></i></button>
+          <div class="drawer-submenu">
+            <a href="games.html">All Machines</a>
+            <a href="game-details.html?id=pick-a-prize">Pick A Prize (Claw)</a>
+            <a href="game-details.html?id=press-a-prize">Press A Prize (Clip)</a>
+            <a href="game-details.html?id=ten-on-ten">10 on 10 (Timer)</a>
+            <a href="game-details.html?id=cut-a-prize">Cut A Prize (Cutter)</a>
+            <a href="game-details.html?id=perfect-tower">Perfect Tower (Stacker)</a>
+          </div>
+        </li>
+        <li class="drawer-nav-item">
+          <button type="button" class="drawer-link drawer-dropdown-toggle" aria-expanded="false"><span>Products</span><i data-lucide="chevron-down"></i></button>
+          <div class="drawer-submenu">
+            <a href="toys.html">Buy Toys &amp; Prizes</a>
+            <a href="spare-parts.html">Buy Spare Parts</a>
+          </div>
+        </li>
+        <li class="drawer-nav-item">
+          <button type="button" class="drawer-link drawer-dropdown-toggle" aria-expanded="false"><span>Business</span><i data-lucide="chevron-down"></i></button>
+          <div class="drawer-submenu">
+            <a href="business-opportunities.html">Franchise &amp; EMI Models</a>
+            <a href="advertise.html">Advertise With Us</a>
+          </div>
+        </li>
+        <li class="drawer-nav-item">
+          <button type="button" class="drawer-link drawer-dropdown-toggle" aria-expanded="false"><span>Learn</span><i data-lucide="chevron-down"></i></button>
+          <div class="drawer-submenu">
+            <a href="knowledge-centre.html">Knowledge Centre</a>
+            <a href="handbook.html">Handbook of Wisdom</a>
+            <a href="repair-maintenance.html">Repair &amp; Upkeep</a>
+          </div>
+        </li>
+        <li class="drawer-nav-item"><a href="cart.html" class="drawer-link">Shopping Cart</a></li>
+        <li class="drawer-nav-item"><a href="contact.html" class="drawer-link">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="drawer-footer">
+      <div class="drawer-theme-row"><span>Appearance</span><button type="button" class="theme-toggle" aria-label="Switch to dark theme" title="Switch theme"><svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div>
+      <a class="drawer-contact-phone" href="tel:+918855922736"><i data-lucide="phone"></i> +91 8855922736</a>
+      <button type="button" class="btn btn-primary" style="width:100%;" data-open-callback>Request Callback</button>
+    </div>
+  </aside>
+
+
+  <main class="section-padding">
+    <div class="container">
+      <div class="product-details-breadcrumbs">
+        <a href="index.html">Home</a> &gt; <span>Shopping Cart</span>
+      </div>
+
+      <div class="section-header">
+        <span class="section-eyebrow"><i data-lucide="shopping-cart"></i> Your Selection</span>
+        <h1 class="section-title">Review Equipment &amp; Inventory Cart</h1>
+      </div>
+
+      <!-- Empty State -->
+      <div id="cart-empty-state" class="catalog-empty-state" style="display: none;">
+        <i data-lucide="shopping-bag" style="font-size: 3.5rem; color: var(--text-dim);"></i>
+        <h3 style="margin-top: 1rem;">Your Shopping Cart Is Currently Empty</h3>
+        <p style="margin-bottom: 2rem;">Explore our machine catalogue, wholesale plush toy lots, genuine spare parts, or the Handbook of Wisdom.</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="games.html" class="btn btn-primary"><i data-lucide="gamepad-2"></i> Explore Machines</a>
+          <a href="toys.html" class="btn btn-outline"><i data-lucide="gift"></i> Browse Toys</a>
+          <a href="spare-parts.html" class="btn btn-outline"><i data-lucide="wrench"></i> Spare Parts</a>
+          <a href="handbook.html" class="btn btn-outline"><i data-lucide="book"></i> Handbook (₹999)</a>
+        </div>
+      </div>
+
+      <!-- Active Cart Layout -->
+      <div class="cart-layout-grid" id="cart-layout">
+        <!-- Cart Items Column -->
+        <div style="background-color: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2rem;">
+          <h2 style="font-size: 1.25rem; font-weight: 800; color: var(--text-white); margin-bottom: 1rem;">Cart Items</h2>
+          <div id="cart-items-container">
+            <!-- Dynamically populated by GGCart.renderCartPage() -->
+          </div>
+
+          <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+            <a href="games.html" class="btn btn-outline btn-sm">
+              &larr; Continue Exploring Products
+            </a>
+            <button type="button" class="btn btn-outline btn-sm text-muted" onclick="GGCart.clearCart()">
+              <i data-lucide="trash"></i> Clear Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Cart Summary Card -->
+        <div id="cart-summary-card" class="cart-summary-box">
+          <h3 class="cart-summary-title">Order Estimation</h3>
+          
+          <div class="summary-row">
+            <span>Items Subtotal:</span>
+            <strong id="cart-subtotal-val">₹0</strong>
+          </div>
+          <div class="summary-row">
+            <span>GST Provision:</span>
+            <span>Calculated on invoice (18%)</span>
+          </div>
+          <div class="summary-row">
+            <span>Logistics &amp; Freight:</span>
+            <span>Calculated by destination</span>
+          </div>
+
+          <div class="summary-row total-row">
+            <span>Total Value:</span>
+            <span id="cart-total-val">₹0</span>
+          </div>
+
+          <!-- Coupon Simulation -->
+          <div style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+            <div style="display: flex; gap: 0.5rem;">
+              <input type="text" id="cart-coupon-input" class="form-control" placeholder="Promo code (e.g. WELCOME)" style="text-transform: uppercase;">
+              <button type="button" class="btn btn-outline btn-sm" onclick="GGUtils.showToast('Promo code applied: Valid for Phase 2 checkout demo', 'info')">
+                Apply
+              </button>
+            </div>
+          </div>
+
+          <a href="checkout.html" class="btn btn-primary btn-lg" style="width: 100%;">
+            <i data-lucide="arrow-right"></i> Proceed To Checkout Demo
+          </a>
+
+          <div class="simulation-notice-box" style="margin-top: 1.25rem;">
+            <i data-lucide="info"></i>
+            <div style="font-size: 0.75rem;">
+              <strong>Phase 1 Notice:</strong> All items and totals are calculated locally in your browser. Live payment processing and inventory reservation will be linked upon Phase 2 backend integration.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="site-logo footer-logo"><img src="assets/images/logo/logo.svg" alt="Game &amp; Games Amusement logo" width="409" height="100" loading="lazy"></a>
+          <p>Pioneering India's next-generation amusement machines with Smart Displays &amp; multi-game QR technology. Turnkey arcade solutions, certified plush prizes and commercial mentorship.</p>
+          <div class="experience-badge-pill"><i data-lucide="award"></i><span>20+ Years of Industry Experience</span></div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Games &amp; Products</h4>
+          <ul class="footer-links-list">
+            <li><a href="games.html">All Machines</a></li>
+            <li><a href="game-details.html?id=pick-a-prize">Pick A Prize</a></li>
+            <li><a href="game-details.html?id=press-a-prize">Press A Prize</a></li>
+            <li><a href="game-details.html?id=ten-on-ten">10 on 10</a></li>
+            <li><a href="game-details.html?id=cut-a-prize">Cut A Prize</a></li>
+            <li><a href="toys.html">Buy Toys &amp; Prizes</a></li>
+            <li><a href="spare-parts.html">Buy Spare Parts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Business</h4>
+          <ul class="footer-links-list">
+            <li><a href="business-opportunities.html">Franchise &amp; EMI Models</a></li>
+            <li><a href="brands.html">Our Brands</a></li>
+            <li><a href="advertise.html">Advertise With Us</a></li>
+            <li><a href="knowledge-centre.html">Learn &amp; Earn Academy</a></li>
+            <li><a href="handbook.html">Handbook of Wisdom (₹999)</a></li>
+            <li><a href="events.html">Events &amp; Refurbished Deals</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="repair-maintenance.html">Repair &amp; Upkeep</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="events.html">News</a></li>
+            <li><a href="contact.html">Feedback &amp; Suggestions</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Get In Touch</h4>
+          <div class="footer-contact-box">
+            <div class="footer-contact-row"><i data-lucide="phone-call"></i><div><strong>Phone</strong><br><a href="tel:+918855922736">+91 8855922736</a></div></div>
+            <div class="footer-contact-row"><i data-lucide="clock"></i><div><strong>Working hours</strong><br>Mon–Sat: 10:00 AM – 6:00 PM</div></div>
+            <div class="footer-contact-row"><i data-lucide="mail"></i><div><strong>Sales &amp; enquiries</strong><br><a href="mailto:sales@gameandgamesamusement.com">sales@gameandgamesamusement.com</a></div></div>
+            <div class="footer-contact-row"><i data-lucide="map-pin"></i><div><strong>Address</strong><br>Placeholder – to be confirmed by the company</div></div>
+          </div>
+          <div class="footer-socials">
+            <a href="https://wa.me/918855922736" class="footer-social-btn" aria-label="WhatsApp" target="_blank" rel="noopener"><i data-lucide="message-circle"></i></a>
+            <a href="https://facebook.com" class="footer-social-btn" aria-label="Facebook" target="_blank" rel="noopener"><i data-lucide="facebook"></i></a>
+            <a href="https://youtube.com" class="footer-social-btn" aria-label="YouTube" target="_blank" rel="noopener"><i data-lucide="youtube"></i></a>
+            <a href="https://instagram.com" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener"><i data-lucide="instagram"></i></a>
+            <a href="https://x.com" class="footer-social-btn" aria-label="X" target="_blank" rel="noopener"><i data-lucide="twitter"></i></a>
+            <a href="https://linkedin.com" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener"><i data-lucide="linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>&copy; <span class="js-year">2026</span> Game &amp; Games Amusement. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/product-data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

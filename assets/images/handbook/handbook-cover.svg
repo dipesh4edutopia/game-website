@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
+  <defs>
+    <linearGradient id="bookCoverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B3151B" />
+      <stop offset="50%" stop-color="#D91F26" />
+      <stop offset="100%" stop-color="#8F0F14" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166" />
+      <stop offset="100%" stop-color="#FFB703" />
+    </linearGradient>
+  </defs>
+  <!-- Book Body -->
+  <rect x="0" y="0" width="400" height="560" rx="12" fill="url(#bookCoverGrad)" stroke="#FFB703" stroke-width="3"/>
+  <!-- Spine Shadow -->
+  <rect x="0" y="0" width="26" height="560" rx="8" fill="#000000" fill-opacity="0.4"/>
+  <line x1="26" y1="0" x2="26" y2="560" stroke="#FFB703" stroke-width="1" stroke-opacity="0.5"/>
+  <!-- Decorative Frame -->
+  <rect x="45" y="30" width="325" height="500" rx="6" fill="none" stroke="#FFB703" stroke-width="1.5" stroke-dasharray="8 4" stroke-opacity="0.6"/>
+  <!-- Badge -->
+  <rect x="110" y="55" width="195" height="30" rx="15" fill="#FFB703" fill-opacity="0.15" stroke="#FFB703" stroke-width="1"/>
+  <text x="207" y="75" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#FFB703" letter-spacing="2">20+ YEARS EXPERIENCE</text>
+  <!-- Title -->
+  <text x="207" y="160" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="34" font-weight="900" fill="#FFFFFF" letter-spacing="1">HANDBOOK</text>
+  <text x="207" y="200" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="30" font-weight="800" fill="#FFB703" letter-spacing="1">OF WISDOM</text>
+  <line x1="120" y1="225" x2="295" y2="225" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <!-- Subtitle -->
+  <text x="207" y="260" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600" fill="#FFD9D6">FINALLY REVEALED</text>
+  <text x="207" y="285" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600" fill="#E2E8F0">Understanding the Arcade &amp;</text>
+  <text x="207" y="305" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600" fill="#E2E8F0">Amusement Business Insights</text>
+  <!-- Central Emblem -->
+  <circle cx="207" cy="380" r="45" fill="#8F0F14" stroke="#FFB703" stroke-width="2"/>
+  <path d="M195 365 L219 365 M207 365 L207 395 M197 385 L217 385" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round"/>
+  <!-- Price Pill -->
+  <rect x="135" y="460" width="145" height="42" rx="21" fill="url(#goldGrad)"/>
+  <text x="207" y="487" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="900" fill="#0A0F1D">ONLY ₹999/-</text>
+</svg>

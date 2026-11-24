@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>overflow harness</title></head>
+<body>
+<pre id="out">running…</pre>
+<div id="stage" style="position:absolute;left:0;top:0;opacity:0;pointer-events:none"></div>
+<script>
+const pages = ['index','about','games','game-details','toys','spare-parts','brands','business-opportunities','advertise','knowledge-centre','handbook','repair-maintenance','events','careers','contact','cart','checkout','privacy-policy','terms'];
+const widths = (new URLSearchParams(location.search).get('w') || '390,360,820,1120').split(',').map(Number);
+const theme = new URLSearchParams(location.search).get('theme') || 'light';
+const results = [];
+let pending = 0;
+function done() { if (--pending === 0) { document.getElementById('out').textContent = 'RESULTS\n' + results.join('\n') + '\nEND'; document.title = 'done'; } }
+for (const w of widths) for (const p of pages) {
+  pending++;
+  const f = document.createElement('iframe');
+  f.style.cssText = `width:${w}px;height:900px;border:0`;
+  f.src = `${p}.html${p === 'game-details' ? '?id=pick-a-prize' : ''}`;
+  f.onload = () => setTimeout(() => {
+    try {
+      const d = f.contentDocument, de = d.documentElement;
+      de.setAttribute('data-theme', theme);
+      const sw = de.scrollWidth, cw = de.clientWidth;
+      let off = [];
+      if (sw > cw + 1) {
+        d.querySelectorAll('body *').forEach(el => {
+          const r = el.getBoundingClientRect();
+          if (r.right > cw + 1 && r.width > 0 && getComputedStyle(el).position !== 'fixed') off.push((el.className && el.className.toString().split(' ')[0] || el.tagName) + ':' + Math.round(r.right));
+        });
+      }
+      const logo = d.querySelector('.site-logo img');
+      const nav = d.querySelector('.desktop-nav');
+      const navWrap = nav && getComputedStyle(nav).display !== 'none' ? [...nav.querySelectorAll('.nav-link')].some(a => a.getBoundingClientRect().height > 30) : false;
+      const hdr = d.querySelector('.header-container');
+      const hdrOver = hdr ? hdr.scrollWidth > hdr.clientWidth + 1 : false;
+      results.push(`${w}px ${p}: scroll=${sw} client=${cw} ${sw > cw + 1 ? 'OVERFLOW ' + [...new Set(off)].slice(0, 6).join(',') : 'ok'}${navWrap ? ' NAVWRAP' : ''}${hdrOver ? ' HEADEROVER' : ''}${logo && logo.naturalWidth ? '' : ' NOLOGO'}`);
+    } catch (e) { results.push(`${w}px ${p}: ERR ${e.message}`); }
+    f.remove(); done();
+  }, 600);
+  document.getElementById('stage').appendChild(f);
+}
+</script></body></html>
